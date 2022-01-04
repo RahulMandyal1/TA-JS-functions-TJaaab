@@ -34,7 +34,7 @@ addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
 function addTwoNumbers(firstNum , secondNum){
-  if( typeof firstNum && secondNum === String){
+  if( typeof firstNum !=='number'|| secondNum !=='number'){
     alert("Ente a valid input ");
   }
   else{
@@ -42,10 +42,10 @@ function addTwoNumbers(firstNum , secondNum){
   }
   
 }
-let firstExample  =addTwoNumbers(10, 22); // 32
-let secondExample = addTwoNumbers(20, 32); // 32
-let thirdExample  =addTwoNumbers(10, "100"); // Alert Enter Valid Input
-console.log(`${firstExample } ${secondExample } ${thirdExample}`);
+// let firstExample  =addTwoNumbers(10, 22); // 32
+// let secondExample = addTwoNumbers(20, 32); // 32
+// let thirdExample  =addTwoNumbers(10, "100"); // Alert Enter Valid Input
+// console.log(`${firstExample } ${secondExample } ${thirdExample}`);
 
 /*
 4. Create a function named `calc` which accepts three parameter `numA`, `numB` and `operation`. Operation
@@ -85,6 +85,7 @@ isLeapYear(2000); // true
 isLeapYear(2001); // false
 */
 function isLeapYear(leapyear){
+  
   if(leapyear%400==0 ){
     return true;
   }
